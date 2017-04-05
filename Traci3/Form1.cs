@@ -806,7 +806,7 @@ namespace Traci3
             // create on open file dialog box wil the appropriate fiel types.
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             //openFileDialog1.DefaultExt = ".xlsx";
-            openFileDialog1.Filter = "Excel 2003 File 2003 (.xls)| *.xls|Excel 2007 or 2010 File (.xlsx)| *.xlsx|All files (*.*)|*.* ";
+            openFileDialog1.Filter = "Excel File (.xlsx)| *.xlsx|All files (*.*)|*.* ";
             openFileDialog1.FilterIndex = 1;
 
             // If the open file dialog has been successful...
