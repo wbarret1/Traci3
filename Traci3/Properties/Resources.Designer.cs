@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Traci3.Properties
-{
-
-
+namespace Traci3.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,90 @@ namespace Traci3.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Traci3.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_logo_small {
+            get {
+                object obj = ResourceManager.GetObject("circle_logo_small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1	Alabama	AL	57	55	2	60
+        ///2	Alaska	AK	58	56	2	60
+        ///3	Arizona	AZ	58	56	2	60
+        ///4	Arkansas	AR	58	55	2	60
+        ///5	California	CA	58	56	2	60
+        ///6	Colorado	CO	58	56	2	60
+        ///7	Connecticut	CT	57	53	2	60
+        ///8	Delaware	DE	57	53	2	60
+        ///9	District of Columbia	DC	57	55	2	60
+        ///10	Florida	FL	57	55	2	60
+        ///11	Georgia	GA	57	55	2	60
+        ///12	Hawaii	HA	58	56	2	60
+        ///13	Idaho	ID	58	56	2	60
+        ///14	Illinois	IL	57	54	2	60
+        ///15	Indiana	IN	57	54	2	60
+        ///16	Iowa	IA	58	54	2	60
+        ///17	Kansas	KS	58	54	2	60
+        ///18	Kentucky	KY	57	55	2	60
+        ///19	Louisiana	LA	58	55	2	60
+        ///20	Maine [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Locations {
+            get {
+                return ResourceManager.GetString("Locations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7664417	AMMONIA		0.00E+00	1.88E+00	1.88E+00	6.67E-02	1.19E-01	7.79E-01	0.00E+00	0.00E+00	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	
+        ///7783064	HYDROGEN SULFIDE		0.00E+00	1.88E+00	1.88E+00	0.00E+00	0.00E+00	0.00E+00	0.00E+00	0.00E+00	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	
+        ///7664393	HYDROFLUORIC ACID		0.00E+00	1.60E+00	1.60E+00	0.00E+00	0.00E+00	0.00E+00	0.00E+00	0.00E+00	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/a	n/ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Substances {
+            get {
+                return ResourceManager.GetString("Substances", resourceCulture);
             }
         }
     }

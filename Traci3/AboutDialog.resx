@@ -117,14 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="circle_logo_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\circle_logo_small.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Locations" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Locations.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Substances" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Substances.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Disclaimer of Liability:    
+
+With respect to this software and documentation, neither the United States Government nor any of their employees, assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed. Furthermore, software and documentation are supplied "as-is" without guarantee or warranty, expressed or implied, including without limitation, any warranty of merchantability or fitness for a specific purpose. 
+
+Disclaimer of Endorsement:   
+
+Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United Sates Government. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States Government, and shall not be used for advertising or product endorsement purposes.
+
+Copyright Status:   
+
+The U.S. Government retains a non-exclusive, royalty-free license to publish or reproduce the documents and software provided. The software and documentation may be freely distributed and may be used for testing and evaluation purposes.
+</value>
   </data>
 </root>
