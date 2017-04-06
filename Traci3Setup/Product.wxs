@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="*" Name="Traci3Setup" Language="1033" Version="1.0.0.0" Manufacturer="" UpgradeCode="d3a0df05-0851-4662-9d14-2d7d393b43d0">
+  <Product Id="*" Name="Traci3" Language="1033" Version="1.0.0.0" Manufacturer="US Environmental Protection Agency" UpgradeCode="d3a0df05-0851-4662-9d14-2d7d393b43d0">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perUser" />
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
-    <MediaTemplate />
 
     <Media Id='1' Cabinet='product.cab' EmbedCab='yes'/>
 
@@ -12,6 +11,10 @@
       <ComponentGroupRef Id="ProductComponents" />
       <ComponentRef Id="ApplicationShortcut" />
     </Feature>
+    <Icon
+    Id="Traci3Icons"
+    SourceFile="$(var.Traci3.TargetPath)"
+      />
   </Product>
 
   <Fragment>
@@ -19,23 +22,24 @@
       <Directory Id="LocalAppDataFolder">
         <Directory Id="INSTALLFOLDER" Name="Traci3" />
       </Directory>
-     <Directory Id="ProgramMenuFolder" Name="Programs">
+      <Directory Id="ProgramMenuFolder" Name="Programs">
         <Directory Id="ApplicationProgramsFolder" Name="Traci 3"/>
       </Directory>
-     </Directory>
+    </Directory>
   </Fragment>
 
   <Fragment>
     <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
       <!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-     <Component Id="ProductComponent" Guid = "31E6D099-0131-450A-BFCB-A7526BEE05E6">
-       <!-- <Component Id="ProductComponent"> -->
-      <!-- TODO: Insert files, registry keys, and other resources here. -->
-      <!-- </Component> -->
-       <File Source="$(var.Traci3.TargetPath)" />
+      <Component Id="ProductComponent" Guid = "31E6D099-0131-450A-BFCB-A7526BEE05E6">
+        <!-- <Component Id="ProductComponent"> -->
+        <!-- TODO: Insert files, registry keys, and other resources here. -->
+        <!-- </Component> -->
+        <File Source="$(var.Traci3.TargetPath)" />
+        <RemoveFolder Id="LocalAppDataFolder" On="uninstall"/>
         <RegistryValue Root="HKCU" Key="Software\USEPA\Traci3" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
       </Component>
-     </ComponentGroup>
+    </ComponentGroup>
   </Fragment>
 
   <Fragment>
@@ -45,7 +49,9 @@
                   Name="Traci 3"
                   Description="Tool for Reduction and Assessment of Chemicals and Other Environmental Impacts."
                   Target="[#$(var.Traci3.TargetFileName)]"
-                  WorkingDirectory="INSTALLFOLDER"/>
+                  WorkingDirectory="INSTALLFOLDER"
+                  Icon="Traci3Icons"
+                  IconIndex="0"/>
         <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
         <RegistryValue Root="HKCU" Key="Software\USEPA\Traci3" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
       </Component>

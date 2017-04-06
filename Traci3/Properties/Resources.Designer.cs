@@ -108,5 +108,15 @@ namespace Traci3.Properties {
                 return ResourceManager.GetString("Substances", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon TRACI {
+            get {
+                object obj = ResourceManager.GetObject("TRACI", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }
