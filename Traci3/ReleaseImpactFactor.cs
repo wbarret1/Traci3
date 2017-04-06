@@ -68,8 +68,7 @@ namespace Traci3
 
         public override System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues(System.ComponentModel.ITypeDescriptorContext context)
         {
-            if (context.Instance.GetType() == typeof(Release)) return new System.ComponentModel.TypeConverter.StandardValuesCollection(ImpactFactorCollection.Counties(((Release)(context.Instance)).Process.State));
-            return new System.ComponentModel.TypeConverter.StandardValuesCollection(ImpactFactorCollection.Counties(((Process)(context.Instance)).State));
+            return new System.ComponentModel.TypeConverter.StandardValuesCollection(ImpactFactorCollection.Counties(((Release)(context.Instance)).Process.State));
         }
 
         public override bool GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext context)
