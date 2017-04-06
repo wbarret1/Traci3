@@ -83,7 +83,7 @@ namespace Traci3
         }
 
         string m_Name;
-        [System.ComponentModel.CategoryAttribute("Identification")]
+        [System.ComponentModel.CategoryAttribute("Input")]
         public string Name
         {
             get
@@ -106,7 +106,7 @@ namespace Traci3
         }
 
         string m_Description;
-        [System.ComponentModel.CategoryAttribute("Identification")]
+        [System.ComponentModel.CategoryAttribute("Input")]
         public string Description
         {
             get

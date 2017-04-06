@@ -88,7 +88,7 @@ namespace Traci3
         /// <remarks>
         /// </remarks>
         [System.ComponentModel.TypeConverter(typeof(ReleaseNameConverter))]
-        [System.ComponentModel.CategoryAttribute("Identification")]
+        [System.ComponentModel.CategoryAttribute("Input")]
         public string Name
         {
             get
@@ -198,7 +198,7 @@ namespace Traci3
         /// A description of the Release.
         /// </summary>
         string m_Description;
-        [System.ComponentModel.CategoryAttribute("Identification")]
+        [System.ComponentModel.CategoryAttribute("Input")]
         public string Description
         {
             get
@@ -241,7 +241,7 @@ namespace Traci3
         }
 
         double m_Quantity;
-        [System.ComponentModel.CategoryAttribute("Quantity")]
+        [System.ComponentModel.CategoryAttribute("Input")]
         public double Quantity
         {
             get
@@ -257,7 +257,7 @@ namespace Traci3
         releaseUnit m_UOM;
         [
         //System.ComponentModel.TypeConverter(typeof(ReleaseNameConverter)),
-        System.ComponentModel.CategoryAttribute("Quantity")
+        System.ComponentModel.CategoryAttribute("Input")
         ]
         public String UOM
         {
@@ -278,7 +278,7 @@ namespace Traci3
 
         [
         //System.ComponentModel.TypeConverter(typeof(ReleaseNameConverter)),
-        System.ComponentModel.CategoryAttribute("Quantity")
+        System.ComponentModel.CategoryAttribute("Input")
         ]
         public LifeCycleStage LifeCycleStage
         {
